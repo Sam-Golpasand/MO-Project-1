@@ -4,6 +4,7 @@
 LD R0, A ; Lower number
 LD R1, B ; Upper number
 
+
 X
     ; Check if A - B is zero. If so, break to DONE
     NOT R2, R0
