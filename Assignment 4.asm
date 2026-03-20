@@ -1,16 +1,25 @@
-resultS
-ADD R0, R0, #0
-BRz NOTPRIME
+.ORIG x3000
 
-PRIME
-LEA R0, PRIME_MSG
-PUTS
-RET
+resultS 
+    ADD R0, R0, #0
+    BRz NOTPRIME
+
+ISPRIME
+    LEA R0, ISPRIMEMESSAGE
+    PUTS
+    JSR BREAK
 
 NOTPRIME
-LEA R0, NOTPRIME_MSG
-PUTS
-RET
+    LEA R0, ISNOTPRIMEMESSAGE
+    PUTS
 
-PRIME_MSG .STRINGZ "The number is prime"
-NOTPRIME_MSG .STRINGZ "The number is not prime"
+BREAK
+    HALT
+
+
+
+ISPRIMEMESSAGE .STRINGZ "The number is prime \n"
+ISNOTPRIMEMESSAGE .STRINGZ "The number is not prime \n"
+
+
+.END
