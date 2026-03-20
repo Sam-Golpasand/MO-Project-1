@@ -16,6 +16,7 @@ X
     ADD R1, R1, #-1
     ADD R0, R0, #1
 
+    ; and now call X recursively
     BRNZP X
 
 
