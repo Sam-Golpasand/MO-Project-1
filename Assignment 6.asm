@@ -8,10 +8,16 @@ main
 
 HALT
 
+; R0 is both for the result and the initialization message.
+; R1 is mostly for the newline and ascii value offset calulations
+; R2-R5 are used for calculations
+
 readS
+    ; prints the init message
     LEA R0, MESSAGE
     PUTS
 
+    ; Remember to reset register 3 since we use it as a temp register
     AND R3, R3, #0
 
 readLoop
@@ -29,7 +35,7 @@ readLoop
     LD R1, ASCII0
     NOT R1, R1
     ADD R1, R1, #1
-    ADD R2, R0, R1      ; R2 = digit
+    ADD R2, R0, R1      ; R2 is now the digit
 
     ; Multiply R3 by 10
     ADD R4, R3, R3      ; 2x
@@ -43,7 +49,8 @@ readLoop
     BRnzp readLoop
 
 done
-    ADD R0, R3, #0      ; move result to R0
+    ; Move the result to R0 and return
+    ADD R0, R3, #0
     RET
 
 
