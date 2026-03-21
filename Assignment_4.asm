@@ -7,8 +7,7 @@
 resultS
     ST R7, SaveR7
 
-    AND R1, R1, #0 ; clear R1
-    ADD R2, R1, R0 ; add R0 and R1 to see if R0 is set to 0
+    ADD R1, R0, #0 ; add R0 and R1 to see if R0 is set to 0
     BRz notPrime ; if R1 + R0 is zero, branch to the notPrime message
     BR prime ; if R1 + R0 is not zero, branch to the Prime message
 

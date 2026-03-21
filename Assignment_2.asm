@@ -9,7 +9,8 @@ readS
     LEA R0, PromtMsg
     PUTS
     
-    IN ;reads the first digit to R0 and prints it to console
+    GETC    ; reads the first digit into R0
+    OUT     ; echoes to the console
     
     ; subtracks 48 from R0 to get the numerical value of R0
     LD R1, NegASCIIOffset
@@ -24,7 +25,9 @@ MultiplyLoop
     ADD R3, R3, #-1
     BRp MultiplyLoop
     
-    IN ; reads the secound digit to R0 and prints it to console
+    GETC    ; silently reads the first digit into R0
+    OUT     ; echoes to the console
+    
     ADD R2, R0, R1 ; ;store the numerical value in R2
     
     ADD R0,R2,R4 ; add the two digits together
