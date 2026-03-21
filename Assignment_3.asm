@@ -35,7 +35,7 @@ divisionLoop
     ADD R3, R3, R2
     BRz returnFalse
     BRp divisionLoop
-    BRn nextNumber
+    BR nextNumber
     
     
 returnFalse
