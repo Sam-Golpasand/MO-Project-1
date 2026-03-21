@@ -25,7 +25,7 @@ MultiplyLoop
     ADD R3, R3, #-1
     BRp MultiplyLoop
     
-    GETC    ; silently reads the first digit into R0
+    GETC    ; reads the secound digit into R0
     OUT     ; echoes to the console
     
     ADD R2, R0, R1 ; ;store the numerical value in R2
