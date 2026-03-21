@@ -14,7 +14,7 @@ X
     BRnzp X
 DONE    ST R1,C
     TRAP x25
-A   .FILL 2
-B   .FILL 10
+A   .BLKW 1
+B   .BLKW 1
 C   .BLKW 1
     .END
