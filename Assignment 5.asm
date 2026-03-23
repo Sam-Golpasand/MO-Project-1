@@ -60,7 +60,6 @@ ISPRIME
 
     
 LOOP 
-
     ; Load array value
     LDR R3, R1, #0
     NOT R4, R3
