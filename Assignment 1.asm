@@ -24,9 +24,9 @@ DONE ST R1, C ; Store the midpoint in C
 
 TRAP x25
 
-A .BLKW 1
-B .BLKW 1
-C .BLKW 1
+A .FILL #22
+B .FILL #44
+C .BLKW #1
 
 .END
 
