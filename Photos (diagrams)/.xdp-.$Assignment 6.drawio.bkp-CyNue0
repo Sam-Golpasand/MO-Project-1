@@ -67,7 +67,7 @@
         <mxCell id="QG3ElDFkQ2LCZVVHHdPG-88" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Print notPrime message" vertex="1">
           <mxGeometry height="60" width="120" x="1160" y="330" as="geometry" />
         </mxCell>
-        <mxCell id="QG3ElDFkQ2LCZVVHHdPG-89" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;" value="Return to main function&amp;nbsp;" vertex="1">
+        <mxCell id="QG3ElDFkQ2LCZVVHHdPG-89" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;" value="Jump to break" vertex="1">
           <mxGeometry height="60" width="120" x="1160" y="470" as="geometry" />
         </mxCell>
         <mxCell id="QG3ElDFkQ2LCZVVHHdPG-90" edge="1" parent="1" source="QG3ElDFkQ2LCZVVHHdPG-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QG3ElDFkQ2LCZVVHHdPG-93" value="">
@@ -82,7 +82,7 @@
         <mxCell id="QG3ElDFkQ2LCZVVHHdPG-93" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Print Prime message" vertex="1">
           <mxGeometry height="60" width="120" x="1310" y="330" as="geometry" />
         </mxCell>
-        <mxCell id="QG3ElDFkQ2LCZVVHHdPG-94" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;" value="Return to main function&amp;nbsp;" vertex="1">
+        <mxCell id="QG3ElDFkQ2LCZVVHHdPG-94" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;" value="Jump to break" vertex="1">
           <mxGeometry height="60" width="120" x="1310" y="470" as="geometry" />
         </mxCell>
         <mxCell id="QG3ElDFkQ2LCZVVHHdPG-95" edge="1" parent="1" source="QG3ElDFkQ2LCZVVHHdPG-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QG3ElDFkQ2LCZVVHHdPG-102" value="">

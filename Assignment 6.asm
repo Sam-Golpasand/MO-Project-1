@@ -5,8 +5,8 @@ main
     JSR readS
     JSR isPrime
     BRnzp main
-
-HALT
+ ; Since this is an infinite loop we dont need a HALT. Another implementation
+ ; could add a listiner for 'q' or something else to quit the infinite loop.
 
 ; R0 is both for the result and the initialization message.
 ; R1 is mostly for the newline and ascii value offset calulations
@@ -24,7 +24,7 @@ readLoop
     GETC
     OUT
 
-    ; Check ENTER
+    ; Check for enter key
     LD R1, NEWLINE
     NOT R1, R1
     ADD R1, R1, #1
@@ -35,7 +35,7 @@ readLoop
     LD R1, ASCII0
     NOT R1, R1
     ADD R1, R1, #1
-    ADD R2, R0, R1      ; R2 is now the digit
+    ADD R2, R0, R1      ; R2 is now the digit for the ASCII
 
     ; Multiply R3 by 10
     ADD R4, R3, R3      ; 2x
